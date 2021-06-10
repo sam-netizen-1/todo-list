@@ -195,7 +195,7 @@ option {
   }
   .todo-item {
     margin: 0 0;
-    padding: 0 0;
+    padding: 0.1rem;
   }
 
   .todo li {
