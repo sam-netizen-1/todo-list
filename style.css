@@ -142,3 +142,64 @@ select {
 option {
   font-size: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+  select {
+    display: none;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(120deg, #fc466b 0%, #3f5efb);
+  }
+  header,
+  form {
+    min-height: 10vh;
+    font-size: 1rem;
+  }
+  form input,
+  form button {
+    padding: 0.2rem;
+    font-size: 0.6rem;
+  }
+
+  .todo-container {
+    display: inline;
+    justify-content: center;
+  }
+
+  .todo {
+    margin: 0.5rem;
+    font-size: 0.6rem;
+    transition: all 0.5s ease;
+  }
+
+  .trash-btn,
+  .complete-btn {
+    margin: 0;
+    padding: 0;
+    font-size: 0.5rem;
+  }
+
+  .todo {
+    padding: 0;
+    font-size: 0.4rem;
+    transition: all 0.5s ease;
+  }
+  
+  .todo-list {
+    max-width: 40%;
+    margin: auto;
+    padding: auto;
+  }
+  .todo-item {
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  .todo li {
+    flex: auto;
+  }
+}
+
